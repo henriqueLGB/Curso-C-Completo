@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipularString", "Manipula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipulaçãoDeNúmeros", "ManipulaçãoDeNúmeros\ManipulaçãoDeNúmeros.csproj", "{2F9E7D12-26F2-4731-BE3C-F9C88EA32B91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colecoes", "Colecoes\Colecoes.csproj", "{77EA2F08-AD61-4F58-9845-CAABD62CB046}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{2F9E7D12-26F2-4731-BE3C-F9C88EA32B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F9E7D12-26F2-4731-BE3C-F9C88EA32B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F9E7D12-26F2-4731-BE3C-F9C88EA32B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77EA2F08-AD61-4F58-9845-CAABD62CB046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77EA2F08-AD61-4F58-9845-CAABD62CB046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77EA2F08-AD61-4F58-9845-CAABD62CB046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77EA2F08-AD61-4F58-9845-CAABD62CB046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
