@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadConsole", "ThreadCons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadForms", "ThreadForms\ThreadForms.csproj", "{00EFF9AC-665D-4561-8BAC-5EF1B75FB663}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskConsole", "TaskConsole\TaskConsole.csproj", "{D78EB948-0CE6-46F4-8106-F54F103B2F88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formulario", "Formulario\Formulario.csproj", "{CF6A2517-629B-4336-91CC-833EB4BA8F8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{00EFF9AC-665D-4561-8BAC-5EF1B75FB663}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00EFF9AC-665D-4561-8BAC-5EF1B75FB663}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00EFF9AC-665D-4561-8BAC-5EF1B75FB663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78EB948-0CE6-46F4-8106-F54F103B2F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78EB948-0CE6-46F4-8106-F54F103B2F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78EB948-0CE6-46F4-8106-F54F103B2F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78EB948-0CE6-46F4-8106-F54F103B2F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF6A2517-629B-4336-91CC-833EB4BA8F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF6A2517-629B-4336-91CC-833EB4BA8F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF6A2517-629B-4336-91CC-833EB4BA8F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF6A2517-629B-4336-91CC-833EB4BA8F8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
