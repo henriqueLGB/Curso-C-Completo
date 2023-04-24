@@ -33,16 +33,16 @@
             this.btnThread = new System.Windows.Forms.Button();
             this.menuBar = new System.Windows.Forms.MenuStrip();
             this.MenuFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.MFileNovo = new System.Windows.Forms.ToolStripMenuItem();
-            this.MFileAbrir = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.MFileSair = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.MHelpSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.MHelpSobreDesenv = new System.Windows.Forms.ToolStripMenuItem();
             this.MHelpSobreVer = new System.Windows.Forms.ToolStripMenuItem();
             this.comboMenu = new System.Windows.Forms.ToolStripComboBox();
             this.MenuPesquisar = new System.Windows.Forms.ToolStripTextBox();
+            this.MFileNovo = new System.Windows.Forms.ToolStripMenuItem();
+            this.MFileAbrir = new System.Windows.Forms.ToolStripMenuItem();
+            this.MFileSair = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,29 +103,10 @@
             this.MenuFile.Size = new System.Drawing.Size(37, 23);
             this.MenuFile.Text = "File";
             // 
-            // MFileNovo
-            // 
-            this.MFileNovo.Name = "MFileNovo";
-            this.MFileNovo.Size = new System.Drawing.Size(180, 22);
-            this.MFileNovo.Text = "Novo";
-            this.MFileNovo.Click += new System.EventHandler(this.noovoToolStripMenuItem_Click);
-            // 
-            // MFileAbrir
-            // 
-            this.MFileAbrir.Name = "MFileAbrir";
-            this.MFileAbrir.Size = new System.Drawing.Size(180, 22);
-            this.MFileAbrir.Text = "Abrir";
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
-            // 
-            // MFileSair
-            // 
-            this.MFileSair.Name = "MFileSair";
-            this.MFileSair.Size = new System.Drawing.Size(180, 22);
-            this.MFileSair.Text = "Sair";
             // 
             // MenuHelp
             // 
@@ -141,20 +122,22 @@
             this.MHelpSobreDesenv,
             this.MHelpSobreVer});
             this.MHelpSobre.Name = "MHelpSobre";
-            this.MHelpSobre.Size = new System.Drawing.Size(180, 22);
+            this.MHelpSobre.Size = new System.Drawing.Size(104, 22);
             this.MHelpSobre.Text = "Sobre";
             // 
             // MHelpSobreDesenv
             // 
             this.MHelpSobreDesenv.Name = "MHelpSobreDesenv";
-            this.MHelpSobreDesenv.Size = new System.Drawing.Size(180, 22);
+            this.MHelpSobreDesenv.Size = new System.Drawing.Size(152, 22);
             this.MHelpSobreDesenv.Text = "Desenvolvedor";
+            this.MHelpSobreDesenv.Click += new System.EventHandler(this.MHelpSobreDesenv_Click);
             // 
             // MHelpSobreVer
             // 
             this.MHelpSobreVer.Name = "MHelpSobreVer";
-            this.MHelpSobreVer.Size = new System.Drawing.Size(180, 22);
+            this.MHelpSobreVer.Size = new System.Drawing.Size(152, 22);
             this.MHelpSobreVer.Text = "Versão";
+            this.MHelpSobreVer.Click += new System.EventHandler(this.MHelpSobreVer_Click);
             // 
             // comboMenu
             // 
@@ -163,12 +146,44 @@
             "Português"});
             this.comboMenu.Name = "comboMenu";
             this.comboMenu.Size = new System.Drawing.Size(121, 23);
+            this.comboMenu.SelectedIndexChanged += new System.EventHandler(this.comboMenu_SelectedIndexChanged);
             // 
             // MenuPesquisar
             // 
             this.MenuPesquisar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.MenuPesquisar.Name = "MenuPesquisar";
-            this.MenuPesquisar.Size = new System.Drawing.Size(100, 23);
+            this.MenuPesquisar.Size = new System.Drawing.Size(200, 23);
+            this.MenuPesquisar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MenuPesquisar_KeyUp);
+            // 
+            // MFileNovo
+            // 
+            this.MFileNovo.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.MFileNovo.Image = global::Formulario.Properties.Resources._140c0c_thumbnail;
+            this.MFileNovo.Name = "MFileNovo";
+            this.MFileNovo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.MFileNovo.Size = new System.Drawing.Size(180, 22);
+            this.MFileNovo.Text = "Novo";
+            this.MFileNovo.Click += new System.EventHandler(this.noovoToolStripMenuItem_Click);
+            // 
+            // MFileAbrir
+            // 
+            this.MFileAbrir.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MFileAbrir.Image = global::Formulario.Properties.Resources._140c0c_thumbnail;
+            this.MFileAbrir.Name = "MFileAbrir";
+            this.MFileAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.MFileAbrir.Size = new System.Drawing.Size(180, 22);
+            this.MFileAbrir.Text = "Abrir";
+            this.MFileAbrir.Click += new System.EventHandler(this.MFileAbrir_Click);
+            // 
+            // MFileSair
+            // 
+            this.MFileSair.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.MFileSair.Image = global::Formulario.Properties.Resources._140c0c_thumbnail1;
+            this.MFileSair.Name = "MFileSair";
+            this.MFileSair.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
+            this.MFileSair.Size = new System.Drawing.Size(180, 22);
+            this.MFileSair.Text = "Sair";
+            this.MFileSair.Click += new System.EventHandler(this.MFileSair_Click);
             // 
             // FormMain
             // 

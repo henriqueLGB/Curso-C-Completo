@@ -48,7 +48,53 @@ namespace Formulario
 
         private void noovoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            new Thread(() => Application.Run(new FormMain())).Start();
+        }
 
+        private void MFileAbrir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormSecunda f = new FormSecunda();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void MFileSair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void MHelpSobreDesenv_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Henrique Lira");
+        }
+
+        private void MHelpSobreVer_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Versão 1.0");
+        }
+
+        private void comboMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboMenu.SelectedIndex == 0)
+            {
+                MenuFile.Text = "File";
+                MenuHelp.Text = "Help";
+            }
+            else
+            {
+                MenuFile.Text = "Arquivo";
+                MenuHelp.Text = "Ajuda";
+            }
+        }
+
+        private void MenuPesquisar_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Return)
+            {
+                lblTitulo.Text = MenuPesquisar.Text;
+                MenuPesquisar.Text = "";
+            }
         }
     }
 }
